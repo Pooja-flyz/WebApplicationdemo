@@ -12,6 +12,13 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
+
+        .container-fluid {
+            position: fixed;
+            background-image: url(wheather.jpeg);
+            background-size: cover;
+        }
+
         body {
             background-color: #f4f4f4;
         }
@@ -37,55 +44,78 @@
 
 <body>
 
-    <div class="container mt-5">
-        <div class="row justify-content-center">
-            <!-- Weather Card 1 -->
-            <div class="col-md-4">
-                <div class="weather-card">
-                    <p>Today </p><i class="bi bi-arrow-down"></i>
-                    <h1>32°C</h1>
-                    <p>☀ Sunny</p>
-                    <p>California, Los Angeles</p>
-                    <p>Feels like 30°C | Sunset 18:20</p>
-                    <div class="d-flex justify-content-around hourly-forecast">
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-8">
-                <div class="col-md-2 bg-white p-3"></div>
+    <div class="container-fluid">
 
-            </div>
-            <!-- Weather Card 2 -->
-            <div class="col-md-6">
-                <div class="weather-card">
+        <div class="d-flex flex-column">
+            <div class="p-3 border  text-white">
 
-                    <div class="d-flex justify-content-around hourly-forecast">
-                        <div class="Column">
-                            <div class="row">
-                                <div class="hour">Now<br>25°C</div>
-                                <div class="hour">2 AM<br>25°C</div>
-                                <div class="hour">3 AM<br>25°C</div>
-                                <div class="hour">4 AM<br>23°C</div>
-                                <div class="hour">5 AM<br>22°C</div>
-                            </div>
-                            <div class="row">
 
-                                <div class="hour">6 AM<br>25°C</div>
-                                <div class="hour">7 AM<br>25°C</div>
-                                <div class="hour">8 AM<br>23°C</div>
+                <div class="container mt-5">
+                    <div class="row justify-content-center">
+                        <!-- Weather Card 1 -->
+                        <div class="col-md-4">
+                            <div class="weather-card">
+                                <div>
+                                    Today <button class="btn ">
+                                        &#9660; <!-- ▼ Unicode Downward Arrow -->
+                                    </button>
 
-                                <div class="hour">9 AM<br>24°C</div>
-                                <div class="hour">10 AM<br>23°C</div>
+                                </div>
+
+                                <h1>32°C</h1>
+                                <p>☀ Sunny</p>
+                                <p>California, Los Angeles</p>
+                                <p>Feels like 30°C | Sunset 18:20</p>
+                                <div class="d-flex justify-content-around hourly-forecast">
+                                </div>
                             </div>
                         </div>
+                        <div class="col-md-8">
+                            <div class="col-md-2 b p-3"></div>
+
+
+                        </div>
+                        <div class="p-3  text-white mt-3">
+                            <!-- Weather Card 2 -->
+                            <div class="col-md-6">
+                                <div class="weather-card">
+
+                                    <div class="d-flex justify-content-around hourly-forecast">
+                                        <div class="Column">
+                                            <div class="row">
+                                                <div class="hour">Now<br>25°C</div>
+                                                <div class="hour">2 AM<br>25°C</div>
+                                                <div class="hour">3 AM<br>25°C</div>
+                                                <div class="hour">4 AM<br>23°C</div>
+                                                <div class="hour">5 AM<br>22°C</div>
+                                            </div>
+                                            <div class="row">
+
+                                                <div class="hour">6 AM<br>25°C</div>
+                                                <div class="hour">7 AM<br>25°C</div>
+                                                <div class="hour">8 AM<br>23°C</div>
+
+                                                <div class="hour">9 AM<br>24°C</div>
+                                                <div class="hour">10 AM<br>23°C</div>
+                                            </div>
+                                        </div>
 
 
 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
+
+
+
                 </div>
             </div>
+
+
         </div>
-    </div>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
