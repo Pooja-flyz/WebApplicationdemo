@@ -25,14 +25,14 @@ namespace WebApplication1.Controllers
                 response.EnsureSuccessStatusCode();
 
                 string data = await response.Content.ReadAsStringAsync();
-                return View(data, "application/json"); // Returning JSON response
+                //return View(data, "application/json"); // Returning JSON response
             }
             catch (HttpRequestException e)
             {
                 return BadRequest($"Error: {e.Message}");
             }
 
-            //return View();
+            return View();
         }
 
         public IActionResult Privacy()
